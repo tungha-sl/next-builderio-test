@@ -72,6 +72,7 @@ const PathPage: NextPage<Props> = ({page}) => {
             </Head>
             <main>
                 <div>
+                    <p>repo: <code>https://github.com/tungha-sl/next-builderio-test</code></p>
                     <p>file: <code>pages/[...path].tsx</code></p>
                     <p>locale: <code>{router.locale}</code></p>
                 </div>
