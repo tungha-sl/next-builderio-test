@@ -1,7 +1,10 @@
 import Head from 'next/head'
 import Link from "next/link";
+import React from "react";
+import {useRouter} from "next/router";
 
 export default function Home() {
+    const router = useRouter();
     const links = [
         {
             href: '/test',
@@ -32,9 +35,10 @@ export default function Home() {
             </Head>
             <main>
                 <div>
-                    <p>
-                        <code>pages/index.tsx</code>
-                    </p>
+                    <div>
+                        <p>file: <code>pages/[...path].tsx</code></p>
+                        <p>locale: <code>{router.locale}</code></p>
+                    </div>
                 </div>
 
                 <div>
